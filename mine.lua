@@ -3,7 +3,6 @@ sizeY = 15
 
 blocksDugDown = 0
 
-turtle.inspect()
 
 for x = 1, sizeX do
     for y = 1, sizeY do
@@ -17,7 +16,7 @@ for x = 1, sizeX do
         
         data = turtle.inspectDown()
         while turtle.inspectDown().name == "minecraft:bedrock" do
-            blocksDugDown++
+            blocksDugDown = blocksDugDown + 1
             turtle.digDown()
             turtle.down()
         end
@@ -33,7 +32,7 @@ for x = 1, sizeX do
         
         data = turtle.inspectDown()
         while turtle.inspectDown().name == "minecraft:bedrock" do
-            blocksDugDown++
+            blocksDugDown = blocksDugDown + 1
             turtle.digDown()
             turtle.down()
         end
