@@ -12,7 +12,7 @@ for x = 1, sizeX do
         turtle.forward()
 
         local success, data = turtle.inspectDown()
-        while data.name == "minecraft:bedrock" do
+        while data.name ~= "minecraft:bedrock" do
             blocksDugDown = blocksDugDown + 1
             turtle.digDown()
             turtle.down()
