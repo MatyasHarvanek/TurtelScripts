@@ -16,7 +16,7 @@ for x = 1, sizeX do
         turtle.turnRight()
         
         data = turtle.inspectDown()
-        while turtle.inspectDown().name == "minecraft:bedrock" then
+        while turtle.inspectDown().name == "minecraft:bedrock" do
             blocksDugDown++
             turtle.digDown()
             turtle.down()
@@ -32,7 +32,7 @@ for x = 1, sizeX do
         turtle.turnLeft()
         
         data = turtle.inspectDown()
-        while turtle.inspectDown().name == "minecraft:bedrock" then
+        while turtle.inspectDown().name == "minecraft:bedrock" do
             blocksDugDown++
             turtle.digDown()
             turtle.down()
